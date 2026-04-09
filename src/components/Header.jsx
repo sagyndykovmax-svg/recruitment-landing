@@ -15,7 +15,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="#" className="text-lg font-bold text-dark-800">
-          <span className="text-brand-500">Global</span>Staff
+          Legacy
         </a>
         <a
           href="#quiz"

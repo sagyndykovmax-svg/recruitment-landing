@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/recruitment-landing/',
+  base: process.env.BASE_URL || '/',
   server: {
     port: 3500,
     host: true,
