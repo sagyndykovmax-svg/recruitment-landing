@@ -1,29 +1,27 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { LangProvider } from './i18n'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import BeautySection from './components/BeautySection'
-import ServiceSection from './components/ServiceSection'
-import TrustSection from './components/TrustSection'
-import ProcessSection from './components/ProcessSection'
-import FaqSection from './components/FaqSection'
-import UrgencySection from './components/UrgencySection'
-import QuizSection from './components/QuizSection'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import EmployersPage from './pages/EmployersPage'
+import BlogPage from './pages/BlogPage'
 
 export default function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <BeautySection />
-      <ServiceSection />
-      <TrustSection />
-      <ProcessSection />
-      <FaqSection />
-      <UrgencySection />
-      <QuizSection />
-      <Footer />
-      <WhatsAppButton />
-    </>
+    <LangProvider>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/employers" element={<EmployersPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+      </BrowserRouter>
+    </LangProvider>
   )
 }

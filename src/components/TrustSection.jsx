@@ -4,19 +4,24 @@ import { StarIcon } from './Icons'
 
 const reviews = [
   {
-    initials: 'АК', color: 'bg-brand-200 text-brand-700',
-    name: 'Айгуль К.', role: 'Нейл-мастер, Дубай',
-    text: 'Переехала 8 месяцев назад. Сначала боялась, что обманут. Но всё прошло чётко: встретили, заселили, на следующий день уже была в салоне. Зарабатываю в 4 раза больше, чем дома.',
+    initials: 'Ж', color: 'bg-brand-200 text-brand-700',
+    name: 'Жазгуль', role: 'Дубай',
+    text: 'Работаю в Дубае уже полгода. Сначала было страшно, но команда Legacy помогла на каждом этапе — от оформления документов до адаптации на месте. Условия хорошие, зарабатываю в несколько раз больше, чем дома.',
   },
   {
-    initials: 'ДМ', color: 'bg-blue-200 text-blue-700',
-    name: 'Дмитрий М.', role: 'Официант, Катар',
-    text: 'Не было опыта вообще. Прошёл обучение на месте за неделю. Сейчас работаю в 5-звёздочном отеле. Чаевые — отдельная история. За 4 месяца накопил больше, чем за год дома.',
+    initials: 'А', color: 'bg-mint-400/30 text-mint-600',
+    name: 'Азема', role: 'Дубай',
+    text: 'Подруга посоветовала Legacy. Оформили быстро, всё прозрачно. Встретили в аэропорту, заселили. Работодатель адекватный, условия соответствуют тому, что обещали.',
   },
   {
-    initials: 'МС', color: 'bg-green-200 text-green-700',
-    name: 'Марина С.', role: 'Лешмейкер, Эр-Рияд',
-    text: 'Подруга уехала первая, потом позвала меня. Оформили быстро — за 3 недели. Условия хорошие, клиенты щедрые. Уже продлила контракт на второй год.',
+    initials: 'М', color: 'bg-purple-200 text-purple-700',
+    name: 'Маргарита', role: 'Дубай',
+    text: 'Уехала работать через Legacy и не пожалела. Контракт понятный, паспорт у меня, координатор на связи. За 4 месяца накопила больше, чем за год дома. Уже продлила контракт.',
+  },
+  {
+    initials: 'Ф', color: 'bg-pink-200 text-pink-700',
+    name: 'Феруза', role: 'Дубай',
+    text: 'Долго сомневалась, но решилась. Legacy всё организовали: визу, билеты, жильё. На месте есть русскоязычный координатор, который помогает в любой ситуации. Рекомендую.',
   },
 ]
 
@@ -33,7 +38,7 @@ function Stars() {
 export default function TrustSection() {
   const ref = useScrollAnimation()
   const people = useCounter(350)
-  const countries = useCounter(4)
+  const countries = useCounter(6)
   const years = useCounter(3)
 
   return (
@@ -66,7 +71,7 @@ export default function TrustSection() {
 
         {/* Reviews */}
         <h3 className="text-xl font-bold mb-8 text-center">Отзывы наших кандидатов</h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {reviews.map((r, i) => (
             <div key={i} className="bg-gray-50 rounded-2xl p-6">
               <div className="flex items-center gap-3 mb-4">

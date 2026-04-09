@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-600 mb-4 max-w-2xl">
-            Вакансии в ОАЭ, Саудовской Аравии, Катаре и Кувейте
+            Вакансии в ОАЭ, Саудовской Аравии, Катаре, Кувейте, Омане и Бахрейне
           </p>
           <p className="text-base text-gray-400 mb-6 max-w-2xl">
             Бьюти-мастера и работа с гостями — отели, рестораны, хостес
@@ -35,8 +35,8 @@ export default function Hero() {
               <span className="text-gray-500">трудоустроены</span>
             </div>
             <div className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm">
-              <span className="font-bold text-mint-600">4</span>
-              <span className="text-gray-500">страны</span>
+              <span className="font-bold text-mint-600">6</span>
+              <span className="text-gray-500">стран</span>
             </div>
             <div className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm">
               <span className="font-bold text-gray-900">3 года</span>
