@@ -37,7 +37,7 @@ export default function ProcessSection() {
 
         <div className="text-center mt-14">
           <a href="#quiz" className="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/25">
-            Начать с первого шага
+            Оставить заявку
             <ArrowRightIcon className="w-5 h-5" />
           </a>
         </div>

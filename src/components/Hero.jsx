@@ -24,9 +24,25 @@ export default function Hero() {
           <p className="text-lg sm:text-xl text-gray-600 mb-4 max-w-2xl">
             Вакансии в ОАЭ, Саудовской Аравии, Катаре и Кувейте
           </p>
-          <p className="text-base text-gray-400 mb-10 max-w-2xl">
+          <p className="text-base text-gray-400 mb-6 max-w-2xl">
             Бьюти-мастера и работа с гостями — отели, рестораны, хостес
           </p>
+
+          {/* Social proof chips */}
+          <div className="flex flex-wrap gap-3 mb-10">
+            <div className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm">
+              <span className="font-bold text-brand-500">350+</span>
+              <span className="text-gray-500">трудоустроены</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm">
+              <span className="font-bold text-mint-600">4</span>
+              <span className="text-gray-500">страны</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white border border-gray-100 rounded-full px-4 py-2 shadow-sm text-sm">
+              <span className="font-bold text-gray-900">3 года</span>
+              <span className="text-gray-500">на рынке</span>
+            </div>
+          </div>
 
           <p className="text-gray-500 text-sm mb-4 uppercase tracking-wider font-semibold">Выберите направление:</p>
           <div className="flex flex-col sm:flex-row gap-4 mb-10">

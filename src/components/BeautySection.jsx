@@ -5,7 +5,7 @@ export default function BeautySection() {
   const ref = useScrollAnimation()
 
   return (
-    <section className="py-20 lg:py-28 bg-white" id="beauty">
+    <section className="py-20 lg:py-28 bg-white border-t-4 border-brand-300" id="beauty">
       <div className="max-w-6xl mx-auto px-4" ref={ref}>
         <div className="flex items-center gap-3 mb-4">
           <div className="w-10 h-10 bg-brand-100 rounded-xl flex items-center justify-center">
@@ -66,7 +66,7 @@ export default function BeautySection() {
 
         <div className="text-center">
           <a href="#quiz" className="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-lg hover:shadow-brand-500/25">
-            Хочу узнать подробнее
+            Оставить заявку
             <ArrowRightIcon className="w-5 h-5" />
           </a>
         </div>

@@ -26,7 +26,7 @@ export default function ServiceSection() {
   const ref = useScrollAnimation()
 
   return (
-    <section className="py-20 lg:py-28 bg-gray-50" id="service">
+    <section className="py-20 lg:py-28 bg-gray-50 border-t-4 border-mint-400" id="service">
       <div className="max-w-6xl mx-auto px-4" ref={ref}>
         <div className="flex items-center gap-3 mb-4">
           <div className="w-10 h-10 bg-mint-400/15 rounded-xl flex items-center justify-center">
@@ -75,7 +75,7 @@ export default function ServiceSection() {
 
         <div className="text-center">
           <a href="#quiz" className="inline-flex items-center gap-2 bg-mint-500 hover:bg-mint-600 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:shadow-lg hover:shadow-mint-500/25">
-            Узнать, подхожу ли я
+            Оставить заявку
             <ArrowRightIcon className="w-5 h-5" />
           </a>
         </div>

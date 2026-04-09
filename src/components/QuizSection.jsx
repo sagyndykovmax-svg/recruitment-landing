@@ -12,12 +12,32 @@ const steps = [
     ],
   },
   {
+    question: 'Сколько вам лет?',
+    key: 'age',
+    options: [
+      { value: '18-22', label: '18–22' },
+      { value: '23-27', label: '23–27' },
+      { value: '28-35', label: '28–35' },
+      { value: '35+', label: 'Старше 35' },
+    ],
+  },
+  {
     question: 'Есть ли у вас опыт работы?',
     key: 'experience',
     options: [
       { value: 'experienced', label: 'Да, есть опыт (от 1 года)' },
       { value: 'some', label: 'Небольшой опыт (до 1 года)' },
       { value: 'none', label: 'Нет опыта, но хочу начать' },
+    ],
+  },
+  {
+    question: 'Ваш уровень английского?',
+    key: 'english',
+    options: [
+      { value: 'none', label: 'Не говорю' },
+      { value: 'basic', label: 'Базовый (приветствие, простые фразы)' },
+      { value: 'intermediate', label: 'Средний (могу общаться)' },
+      { value: 'fluent', label: 'Свободный' },
     ],
   },
   {
@@ -69,7 +89,7 @@ export default function QuizSection() {
         <div className="bg-white rounded-3xl shadow-xl shadow-gray-200/50 p-6 sm:p-10">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3">Узнайте, подходите ли вы</h2>
-            <p className="text-gray-500">Ответьте на 3 вопроса — мы свяжемся с подходящей вакансией</p>
+            <p className="text-gray-500">Ответьте на 5 вопросов — мы подберём подходящую вакансию</p>
           </div>
 
           {/* Progress */}
