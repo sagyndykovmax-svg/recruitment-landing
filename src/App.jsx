@@ -9,10 +9,12 @@ import EmployersPage from './pages/EmployersPage'
 import BlogPage from './pages/BlogPage'
 import SpaPreviewPage from './pages/SpaPreviewPage'
 import AtelierPreviewPage from './pages/AtelierPreviewPage'
+import EditorialPreviewPage from './pages/EditorialPreviewPage'
 
 function AppShell() {
   const location = useLocation()
-  const isStandalone = location.pathname === '/preview-spa' || location.pathname === '/preview-atelier'
+  const standaloneRoutes = ['/preview-spa', '/preview-atelier', '/preview-editorial']
+  const isStandalone = standaloneRoutes.includes(location.pathname)
 
   return (
     <>
@@ -24,6 +26,7 @@ function AppShell() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/preview-spa" element={<SpaPreviewPage />} />
         <Route path="/preview-atelier" element={<AtelierPreviewPage />} />
+        <Route path="/preview-editorial" element={<EditorialPreviewPage />} />
       </Routes>
       {!isStandalone && <Footer />}
       {!isStandalone && <WhatsAppButton />}
