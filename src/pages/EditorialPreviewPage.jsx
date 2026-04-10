@@ -7,6 +7,9 @@ const beautyImage = 'https://images.unsplash.com/photo-1604654894610-df63bc53637
 const hospitalityImage = 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80'
 const portraitImage = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1200&q=80'
 
+// Fallback image (proven to work across all locations)
+const fallbackCountryImage = 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80'
+
 const countries = [
   {
     code: 'UAE',
@@ -27,7 +30,7 @@ const countries = [
     cityEn: 'Doha',
     descRu: 'Утончённая роскошь и культурное наследие. Элитные wellness-центры Дохи.',
     descEn: 'Refined luxury and cultural heritage. Elite wellness centers of Doha.',
-    image: 'https://images.unsplash.com/photo-1577440389376-3f8d0f04404c?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&w=900&q=80',
     offset: 48,
   },
   {
@@ -38,7 +41,7 @@ const countries = [
     cityEn: 'Kuwait City',
     descRu: 'Высокий доход и состоятельная клиентура. Комфортный климат для жизни.',
     descEn: 'High income and affluent clientele. Comfortable lifestyle.',
-    image: 'https://images.unsplash.com/photo-1534497345423-21428e7e7dc2?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=900&q=80',
     offset: 96,
   },
   {
@@ -49,7 +52,7 @@ const countries = [
     cityEn: 'Riyadh · Jeddah',
     descRu: 'Быстрорастущий рынок с уникальными возможностями и высокими зарплатами.',
     descEn: 'Fast-growing market with unique opportunities and high salaries.',
-    image: 'https://images.unsplash.com/photo-1578607060879-41f7e96aee7b?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=900&q=80',
     offset: 144,
   },
 ]
@@ -301,6 +304,7 @@ export default function EditorialPreviewPage() {
                 <img
                   src={c.image}
                   alt={isRu ? c.nameRu : c.nameEn}
+                  onError={(e) => { if (e.target.src !== fallbackCountryImage) e.target.src = fallbackCountryImage }}
                   className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 opacity-85"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1a]/90 via-[#1a1c1a]/20 to-transparent" />
