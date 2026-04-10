@@ -38,7 +38,7 @@ const countries = [
     cityEn: 'Kuwait City',
     descRu: 'Высокий доход и состоятельная клиентура. Комфортный климат для жизни.',
     descEn: 'High income and affluent clientele. Comfortable lifestyle.',
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1534497345423-21428e7e7dc2?auto=format&fit=crop&w=900&q=80',
     offset: 96,
   },
   {
@@ -49,7 +49,7 @@ const countries = [
     cityEn: 'Riyadh · Jeddah',
     descRu: 'Быстрорастущий рынок с уникальными возможностями и высокими зарплатами.',
     descEn: 'Fast-growing market with unique opportunities and high salaries.',
-    image: 'https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1578607060879-41f7e96aee7b?auto=format&fit=crop&w=900&q=80',
     offset: 144,
   },
 ]
@@ -106,7 +106,7 @@ export default function EditorialPreviewPage() {
 
   const people = useCounter(350)
   const countriesCount = useCounter(4)
-  const years = useCounter(3)
+  const years = useCounter(7)
 
   return (
     <div style={{ background: '#faf9f6', color: '#1a1c1a' }} className="min-h-screen font-manrope">
@@ -152,7 +152,7 @@ export default function EditorialPreviewPage() {
             <div className="flex items-center gap-3">
               <div className="w-12 h-px bg-[#775a19]" />
               <span className="font-manrope text-[11px] tracking-[0.25em] uppercase text-[#775a19] font-semibold">
-                {isRu ? 'Legacy · С 2023 года' : 'Legacy · Since 2023'}
+                {isRu ? 'Legacy · С 2019 года' : 'Legacy · Since 2019'}
               </span>
             </div>
 
@@ -176,22 +176,34 @@ export default function EditorialPreviewPage() {
                 {isRu ? 'Выберите направление' : 'Choose your path'}
               </p>
               <div className="grid sm:grid-cols-2 gap-4 max-w-xl">
-                <a href="#beauty" className="group bg-[#faf9f6] p-6 hover:bg-white transition-all duration-500">
-                  <p className="font-manrope text-[10px] tracking-[0.3em] uppercase text-[#c5a059] mb-3">01 · Beauty</p>
-                  <p className="font-noto text-xl text-[#1a1c1a] mb-1" style={{ fontWeight: 500 }}>
+                <a
+                  href="#beauty"
+                  className="group bg-white border border-[#d1c5b4]/40 p-8 text-center hover:bg-[#1a1c1a] hover:border-[#1a1c1a] transition-all duration-500 hover:shadow-xl"
+                >
+                  <p className="font-manrope text-[10px] tracking-[0.35em] uppercase text-[#c5a059] mb-4">01 · Beauty</p>
+                  <p
+                    className="font-noto text-2xl md:text-3xl text-[#1a1c1a] group-hover:text-white mb-2 transition-colors leading-tight"
+                    style={{ fontWeight: 700 }}
+                  >
                     {isRu ? 'Я мастер' : 'Beauty specialist'}
                   </p>
-                  <p className="font-manrope text-xs text-[#7f7667]">
-                    {isRu ? 'Ногти, ресницы, волосы' : 'Nails, lashes, hair'}
+                  <p className="font-manrope text-sm text-[#7f7667] group-hover:text-white/70 transition-colors">
+                    {isRu ? 'Ногти · Ресницы · Волосы' : 'Nails · Lashes · Hair'}
                   </p>
                 </a>
-                <a href="#service" className="group bg-[#faf9f6] p-6 hover:bg-white transition-all duration-500">
-                  <p className="font-manrope text-[10px] tracking-[0.3em] uppercase text-[#c5a059] mb-3">02 · Service</p>
-                  <p className="font-noto text-xl text-[#1a1c1a] mb-1" style={{ fontWeight: 500 }}>
+                <a
+                  href="#service"
+                  className="group bg-white border border-[#d1c5b4]/40 p-8 text-center hover:bg-[#1a1c1a] hover:border-[#1a1c1a] transition-all duration-500 hover:shadow-xl"
+                >
+                  <p className="font-manrope text-[10px] tracking-[0.35em] uppercase text-[#c5a059] mb-4">02 · Hospitality</p>
+                  <p
+                    className="font-noto text-2xl md:text-3xl text-[#1a1c1a] group-hover:text-white mb-2 transition-colors leading-tight"
+                    style={{ fontWeight: 700 }}
+                  >
                     {isRu ? 'Работа с гостями' : 'Hospitality'}
                   </p>
-                  <p className="font-manrope text-xs text-[#7f7667]">
-                    {isRu ? 'Можно без опыта' : 'No experience needed'}
+                  <p className="font-manrope text-sm text-[#7f7667] group-hover:text-white/70 transition-colors">
+                    {isRu ? 'Отели · Рестораны · Ресепшн' : 'Hotels · Restaurants · Reception'}
                   </p>
                 </a>
               </div>
