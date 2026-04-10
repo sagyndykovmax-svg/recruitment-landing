@@ -8,10 +8,11 @@ import AboutPage from './pages/AboutPage'
 import EmployersPage from './pages/EmployersPage'
 import BlogPage from './pages/BlogPage'
 import SpaPreviewPage from './pages/SpaPreviewPage'
+import AtelierPreviewPage from './pages/AtelierPreviewPage'
 
 function AppShell() {
   const location = useLocation()
-  const isStandalone = location.pathname === '/preview-spa'
+  const isStandalone = location.pathname === '/preview-spa' || location.pathname === '/preview-atelier'
 
   return (
     <>
@@ -22,6 +23,7 @@ function AppShell() {
         <Route path="/employers" element={<EmployersPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/preview-spa" element={<SpaPreviewPage />} />
+        <Route path="/preview-atelier" element={<AtelierPreviewPage />} />
       </Routes>
       {!isStandalone && <Footer />}
       {!isStandalone && <WhatsAppButton />}

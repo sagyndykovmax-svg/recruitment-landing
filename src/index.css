@@ -24,8 +24,26 @@
   --color-lavender-soft: #A594C8;
   --color-dark-800: #2d2b3d;
   --color-dark-900: #1e1b2e;
+  --color-atelier-primary: #775a19;
+  --color-atelier-primary-container: #c5a059;
+  --color-atelier-surface: #faf9f6;
+  --color-atelier-surface-low: #f4f3f1;
+  --color-atelier-surface-container: #efeeeb;
+  --color-atelier-on-surface: #1a1c1a;
+  --color-atelier-on-surface-variant: #4e4639;
+  --color-atelier-outline: #7f7667;
+  --color-atelier-outline-variant: #d1c5b4;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Fraunces', Georgia, serif;
+  --font-noto: 'Noto Serif', Georgia, serif;
+  --font-manrope: 'Manrope', system-ui, sans-serif;
+}
+
+.font-noto { font-family: var(--font-noto); }
+.font-manrope { font-family: var(--font-manrope); }
+
+.satin-gradient {
+  background: linear-gradient(135deg, #775a19 0%, #c5a059 100%);
 }
 
 html {
