@@ -27,7 +27,7 @@ const countries = [
     cityEn: 'Doha',
     descRu: 'Утончённая роскошь и культурное наследие. Элитные wellness-центры Дохи.',
     descEn: 'Refined luxury and cultural heritage. Elite wellness centers of Doha.',
-    image: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1577440389376-3f8d0f04404c?auto=format&fit=crop&w=900&q=80',
     offset: 48,
   },
   {
